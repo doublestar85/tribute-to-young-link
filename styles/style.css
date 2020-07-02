@@ -1,0 +1,40 @@
+#main {
+  background-color: peru;
+}
+
+.img-wrapper {
+	display: flex;
+	flex-basis: 50%;
+}
+
+.content-wrapper {
+	display: flex;
+}
+
+.btn-style-1 {
+	width: 150px;
+	height: 50px;
+	transform: skew(170deg);
+  background: #555;
+   font-size: 10px;
+}
+.btn-style-2 {
+	width: 150px;
+	height: 50px;
+	transform: skew(20deg);
+  background: #555;
+   font-size: 10px;
+}
+
+#games {
+	content: "";
+	display: block;
+	width: 130%;
+	-webkit-transform: skewX(-29deg);
+	transform: skewX(-29deg);
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	left: -20px;
+	height: 50px;
+	top: 0;
+}
