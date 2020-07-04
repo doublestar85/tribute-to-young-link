@@ -1,40 +1,115 @@
-#main {
-  background-color: peru;
+/*
+  If the user has expressed their preference for
+  reduced motion, then don't use animations on buttons.
+*/
+@media (prefers-reduced-motion: reduce) {
+  button {
+    animation: none;
+  }
 }
 
-.img-wrapper {
-	display: flex;
-	flex-basis: 50%;
+#main {
+  background-color: rgb(205, 133, 63);
+  display: flex;
+  flex: initial;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* background-blend-mode: multiply; */
+}
+a {
+  color: rgb(188, 51, 158) !important;
+}
+#navbarDropdownMenuLink {
+  border-color: #007bff;
+  background-color: #00b6dc !important;
+}
+.legacy-group .btn {
+  line-height: 1;
+}
+.dd-menu {
+  background-color: #00b6dc;
+  padding-right: 30px;
+}
+
+.button-row div.collapse {
+  max-width: 200px;
+  max-height: 450px;
+}
+
+.nav-bar {
+  list-style: none;
+  justify-content: flex-end;
 }
 
 .content-wrapper {
-	display: flex;
 }
 
+#img-div {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  align-items: center;
+  max-width: 100%;
+}
+
+.legacy-group {
+  flex: 1;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .btn-style-1 {
-	width: 150px;
-	height: 50px;
-	transform: skew(170deg);
-  background: #555;
-   font-size: 10px;
+  width: 150px;
+  height: 50px;
+  transform: skew(170deg);
+  border-color: #007bff;
+  background-color: #00b6dc !important;
+  margin: 10px 10px 10px 10px;
 }
 .btn-style-2 {
-	width: 150px;
-	height: 50px;
-	transform: skew(20deg);
-  background: #555;
-   font-size: 10px;
+  width: 150px;
+  height: 50px;
+  transform: skew(20deg);
+  border-color: #007bff;
+  background-color: #00b6dc !important;
+  margin: 10px 10px 10px 10px;
+}
+
+.card-img-wrap {
+  max-width: 200px;
+  max-height: 450px;
+}
+
+.button-row {
+  display: flex;
+}
+
+.video-box {
+  flex: 1;
+}
+.card-body {
+  align-items: center;
+  background-image: url
+    "(assets/images/bg-border/sheikah_slate_border_by_faithapril_dcisfzu.png)";
 }
 
 #games {
-	content: "";
-	display: block;
-	width: 130%;
-	-webkit-transform: skewX(-29deg);
-	transform: skewX(-29deg);
-	position: absolute;
-	background: rgba(0, 0, 0, 0.8);
-	left: -20px;
-	height: 50px;
-	top: 0;
+  content: "";
+  display: block;
+  width: 130%;
+  -webkit-transform: skewX(-29deg);
+  transform: skewX(-29deg);
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  left: -20px;
+  height: 50px;
+  top: 0;
 }
+
+/* Test button styling */
