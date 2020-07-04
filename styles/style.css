@@ -15,8 +15,11 @@ animation: none;
   align-items: center;
   flex-direction: column;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /* background-position: center;
+  background-size: cover; */
+  background-size: 100% 100%;
+  /* background-blend-mode: multiply; */
+
 }
 a {
   color: rgb(188, 51, 158) !important;
@@ -33,9 +36,8 @@ a {
   padding-right: 30px;
 }
 
-.button-row div.collapse {
-  max-width: 200px;
-  max-height: 450px;
+.card-row {
+  height: 450px;
 }
 
 .nav-bar {
@@ -92,10 +94,10 @@ a {
 .video-box {
   flex: 1;
 }
-.card-body {
+.card-body::before {
   align-items: center;
   background-image: url
-    "(assets/images/bg-border/sheikah_slate_border_by_faithapril_dcisfzu.png)";
+    ("assets/images/bg-border/sheikah_slate_border_by_faithapril_dcisfzu.png");
 }
 
 #games {
