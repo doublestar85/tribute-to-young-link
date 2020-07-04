@@ -3,10 +3,10 @@
   reduced motion, then don't use animations on buttons.
 */
 @media (prefers-reduced-motion: reduce) {
-  button {
-    animation: none;
-  }
+button {
+animation: none;
 }
+
 
 #main {
   background-color: rgb(205, 133, 63);
@@ -17,6 +17,9 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* background-blend-mode: multiply; */
+=======
+  /* background-position: center;
+  background-size: cover; */
 }
 a {
   color: rgb(188, 51, 158) !important;
@@ -109,3 +112,5 @@ a {
   height: 50px;
   top: 0;
 }
+
+/* Test button styling */
