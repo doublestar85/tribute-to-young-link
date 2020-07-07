@@ -1,12 +1,18 @@
-/*
+/* 
   If the user has expressed their preference for
-  reduced motion, then don't use animations on buttons.
-*/
+  reduced motion, then don't use animations on buttons. */
+
 @media (prefers-reduced-motion: reduce) {
-button {
-animation: none;
+  button {
+    animation: none;
+  }
 }
 
+@media (min-width: 150px) {
+  #image {
+    width: 100%;
+  }
+}
 
 #main {
   background-color: rgb(205, 133, 63);
@@ -16,10 +22,6 @@ animation: none;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  /* background-blend-mode: multiply; */
-=======
-  /* background-position: center;
-  background-size: cover; */
 }
 a {
   color: rgb(188, 51, 158) !important;
@@ -39,6 +41,20 @@ a {
 .card-row {
   height: 450px;
 }
+.card-text {
+  height: 300px;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}
+.card-body::before {
+  align-items: center;
+  background-image: url
+    ("assets/images/bg-border/sheikah_slate_border_by_faithapril_dcisfzu.png");
+}
+.card-img-wrap {
+  width: 200px;
+  height: 450px;
+}
 
 .nav-bar {
   list-style: none;
@@ -46,18 +62,24 @@ a {
 }
 
 .content-wrapper {
+  height: 85vh;
 }
 
 #img-div {
   display: flex;
   flex-direction: column;
-  max-height: 500px;
   align-items: center;
-  max-width: 100%;
+}
+
+#image {
+  max-width: 460px;
 }
 
 .legacy-group {
   flex: 1;
+}
+#smash-lin #img-caption {
+  line-height: 1;
 }
 
 .card-content {
@@ -82,22 +104,12 @@ a {
   margin: 10px 10px 10px 10px;
 }
 
-.card-img-wrap {
-  max-width: 200px;
-  max-height: 450px;
-}
-
 .button-row {
   display: flex;
 }
 
 .video-box {
   flex: 1;
-}
-.card-body::before {
-  align-items: center;
-  background-image: url
-    ("assets/images/bg-border/sheikah_slate_border_by_faithapril_dcisfzu.png");
 }
 
 #games {
@@ -112,5 +124,3 @@ a {
   height: 50px;
   top: 0;
 }
-
-/* Test button styling */
